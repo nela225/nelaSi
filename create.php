@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $prezime = trim($_POST['prezime'] ?? '');
     $email = trim($_POST['email'] ?? '');
 
-    // Validacija
     $errors = [];
     if (empty($ime)) $errors[] = 'Ime je obavezno.';
     if (empty($prezime)) $errors[] = 'Prezime je obavezno.';
@@ -26,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     try {
-        // Provjera duplikata emaila
+      
         $checkStmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
         $checkStmt->execute([$email]);
         if ($checkStmt->fetch()) {
