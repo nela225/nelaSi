@@ -1,25 +1,34 @@
-php-mysql-backend
-Ime i prezime studenta
+# User Administration Web App
+
+## Autor
 Nela Ćurović
 
-Naziv predmeta
-Softver inžinjering – Treća gimnazija Sarajevo
+## Opis projekta
+Ovaj projekat predstavlja jednostavnu backend web aplikaciju razvijenu u PHP-u koja omogućava upravljanje podacima korisnika kroz MySQL bazu podataka.
+Cilj projekta je demonstrirati rad sa bazom podataka i implementaciju osnovnih operacija nad podacima.
 
-Opis projekta
-Web aplikacija za upravljanje korisnicima (Users) izgrađena pomoću PHP, MySQL i Bootstrap/CSS3. Implementira kompletan CRUD sistem:
+## Implementirane operacije
 
+✔ Kreiranje novog korisnika  
+✔ Prikaz liste korisnika  
+✔ Uređivanje postojećih podataka  
+✔ Brisanje korisnika iz baze  
 
-✅ Create – Dodavanje novog korisnika putem forme
-✅ Read – Prikaz svih korisnika u tabeli s paginacijom
-✅ Update – Izmjena podataka korisnika u modal dijalogu
-✅ Delete – Brisanje korisnika s potvrdom
+## Korištene tehnologije
 
+- PHP (server-side logika)
+- MySQL (baza podataka)
+- HTML (struktura stranice)
+- CSS (stilizacija)
+- JavaScript (interaktivnost)
 
-Bonus funkcionalnosti
-🔍 Pretraga korisnika (live search)
-📄 Paginacija (5 po stranici)
-✅ JavaScript validacija forme
-🔔 Toast notifikacije umjesto alert/sweetalert
-🛡️ Prepared statements (zaštita od SQL Injection)
-📱 Responsive dizajn
+## Organizacija fajlova
 
+Projekt se sastoji od sljedećih dijelova:
+
+- `config.php` – konekcija na bazu podataka  
+- `index.php` – glavni interfejs aplikacije  
+- `create.php` – unos novih podataka  
+- `read.php` – dohvaćanje podataka  
+- `update.php` – izmjena podataka  
+- `delete.php` – brisanje zapisa  
