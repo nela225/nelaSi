@@ -19,16 +19,4 @@ Bonus funkcionalnosti
 🔔 Toast notifikacije umjesto alert/sweetalert
 🛡️ Prepared statements (zaštita od SQL Injection)
 📱 Responsive dizajn
-Struktura projekta
-php-mysql-backend/
-├── config.php      # Konekcija na bazu (PDO)
-├── index.php       # Glavna stranica (frontend)
-├── create.php      # Dodavanje korisnika
-├── read.php        # Čitanje korisnika (search + paginacija)
-├── update.php      # Ažuriranje korisnika
-├── delete.php      # Brisanje korisnika
-├── assets/
-│   ├── style.css   # Custom CSS
-│   └── script.js  # Frontend logika
-└── README.md
 
