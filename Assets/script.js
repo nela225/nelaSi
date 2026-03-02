@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Nela CRUD loaded");
 
-  // Highlight input kad klikneš
   document.querySelectorAll("input").forEach(input => {
     input.addEventListener("focus", () => {
       input.style.border = "2px solid #00d4ff";
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Potvrda za delete
   document.querySelectorAll("a[href*='delete']").forEach(btn => {
     btn.addEventListener("click", e => {
       if (!confirm("Sigurno želiš obrisati korisnika?")) {
@@ -21,5 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
 
 });
